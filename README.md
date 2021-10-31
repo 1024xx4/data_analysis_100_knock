@@ -54,6 +54,8 @@ Data の整合性を担保する為に Data が分かれていて１つの Data 
 ### Inner join
 ２つの Data で共通の Data のみを抽出したい場合。  
 
+![IMG_1530](https://user-images.githubusercontent.com/7993391/139601124-cfb84f75-2015-42aa-ab5f-cda45bff8977.jpg)
+
 **注意点**  
 正しく結合条件を設定しないと、Data の欠落が起こる。  
 <small>ex). 売上 Data と商品 Master を Inner join 。商品 Master に未登録商品があった場合に売上 Data かその売上が除外され集計に影響がでる。</small>
@@ -61,6 +63,8 @@ Data の整合性を担保する為に Data が分かれていて１つの Data 
 ### Outer join
 - ２つのどちらか片方にでも Data が存在すれば対象とる。
 - 単純に Data を結合した場合の結合方法。
+
+![File](https://user-images.githubusercontent.com/7993391/139601207-a22d2f86-8099-4e6c-92db-77e076153a68.jpg)
 
 **注意点**  
 - Data①にしか Data がない行の Data②にはすべて NULL が代入される。
@@ -71,6 +75,8 @@ Data の整合性を担保する為に Data が分かれていて１つの Data 
  
 - Left join: 結合される側の Data がすべて使われる。
 - Right join: 結合する側の Data がすべて使われる。
+
+![File (1)](https://user-images.githubusercontent.com/7993391/139601215-5736f0b9-ad13-43c2-8467-211d7321fa75.jpg)
 
 **注意点**
 主軸にする Data 側に Data が存在しない場合、抽出 Data に NULL が入るので欠損地の確認や補完が必要になる。
