@@ -36,7 +36,7 @@ Data 数を行方向に増やす（縦に結合する）こと。
 **Join を行う Method**
 ```python
 import pandas as pd
-pd.merge(main_data_frame, data_frame[['data列', 'data列_2', '･･･',]], on='Join key にする Data列', how='Join 方法')
+pd.merge(main_data_frame, data_frame[['data列', 'data列_2', '･･･',]], on='Join key にするData列', how='Join方法')
 ```
 
 # Data 結合と正規化
@@ -77,3 +77,10 @@ Data の整合性を担保する為に Data が分かれていて１つの Data 
 
 ## 結合の注意
 kb結合 Data に重複などが存在する場合、Data が増えてしまう Case があり集計に影響する。
+
+## Data 加工
+一歩間違えると集計 Miss が起き、数字のズレを生む。間違った Data を提供することは
+- 会社の経営に大きな影響を及ぼし、最悪の場合、会社が傾く。
+- Data で語る Data Scientist が誤った Data を出す、というのは信頼を失う。
+
+Data の結合など加工を行う度に「**件数の確認を心がけ**」て「**検算を実行**」する。
