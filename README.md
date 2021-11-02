@@ -48,7 +48,7 @@ Data 数を行方向に増やす（縦に結合する）こと。
 ```python
 import pandas as pd
 
-pd.merge(main_data_frame, data_frame[['data列', 'data列_2', '･･･', ]], on='Join key にするData列', how='Join方法')
+pd.merge(main_data_frame, data_frame[['data_col', 'data_2', '･･･', ]], on='Join_key', how='joing_method')
 ```
 
 # Data 結合と正規化
@@ -144,3 +144,7 @@ import pandas as pd
 # 各種統計量を出力
 data_frame.describe()
 ```
+
+# 集計
+全体の数字感が把握できたら、時系列で状況を確認してみる。その際に、半年程度の Data であれば影響がでることはないが過去数年間の Data 等を扱う場合
+など一纏めに分析するとビジネスモデルの変化等により見誤る Case があるので、Data 範囲を絞る Case もある。
