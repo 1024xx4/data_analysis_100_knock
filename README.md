@@ -1,10 +1,9 @@
 # Python 実践データ分析100本ノック
 
 ---
-
 # Web からの注文数を分析する
 
-## Data を読み込んでみよう。
+## Data の読み込み
 
 分析業務の目的にも寄るが
 
@@ -16,7 +15,7 @@
 全 Data の先頭５行を表示させることで、どのような Data が存在するのか、それぞれの Data 列の関係性など、 Data の大枠を掴むことができる。 複数に渡って存在する Data をかき集め、Data の概要を捉え**
 分析に適した形に加工**することから始める。
 
-## Data を結合( Union )してみよう
+## Data の結合( Union )
 
 **Union を行う Method**
 
@@ -30,13 +29,11 @@ pd.concat([data_frame_1, data_frame_2], ignore_index=True)
 
 Data 数を行方向に増やす（縦に結合する）こと。
 
-## 売上 Data 同士を結合（Join）してみよう
+## Data 同士の結合（Join）
 
 **主軸になる Data** を考えつつ、どの列を Key に Join するか考えていく。
 
-### ex).
-
-主軸になる Data : 最も粒度が細かい Data
+ex). 主軸になる Data : 最も粒度が細かい Data
 
 1. 足りない（付加したい）Data 列は何か？
 2. 共通する Data 列は何か？
@@ -182,3 +179,16 @@ pivot_table
 分析のゴールは  
 「**現場で適切に運用され施策をまわしていくこと**」  
 現場では、数字が苦手な人もいるので伝え方も重要になる。
+
+**Data の可視化で利用できる Methods**
+```python
+import matplotlib.pyplot as plt
+
+plt.plot('list', 'list', label='string')
+```
+matplotlib の Graph 描画は、  
+1. 横軸
+2. 縦軸
+
+順番で指定する。  
+<small>※ label を表記することで凡例に表示することができる。</small>
