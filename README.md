@@ -145,6 +145,40 @@ import pandas as pd
 data_frame.describe()
 ```
 
-# 集計
+### 集計
 全体の数字感が把握できたら、時系列で状況を確認してみる。その際に、半年程度の Data であれば影響がでることはないが過去数年間の Data 等を扱う場合
 など一纏めに分析するとビジネスモデルの変化等により見誤る Case があるので、Data 範囲を絞る Case もある。
+
+**集計で利用できる Methods**
+```python
+import pandas as pd
+
+data_frame.groupby('column').sum()['display_column']
+data_frame.groupby(['column_1', 'column_2']).sum()[['display_column_1', 'display_column_2']]
+```
+groupby
+- まとめたい列
+- 集計方法
+- 表示させる列
+ 
+を指定する。  
+まとめたい列が複数ある場合、List 型で指定する。
+
+```python
+import pandas as pd
+
+pd.pivot_table(data_frame, index='column', columns='column', values=['column_1', 'column_2'], aggfunc='集計方法')
+
+```
+pivot_table
+- 行と列を指定することができる。
+- index: 行
+- columns: 列
+- values: 集計したい数字列
+- aggfunc: 集計方法
+
+### Data の可視化
+表形式の Data は、細かい数字が把握できるが Data の推移が一目ではわからない。
+分析のゴールは  
+「**現場で適切に運用され施策をまわしていくこと**」  
+現場では、数字が苦手な人もいるので伝え方も重要になる。
