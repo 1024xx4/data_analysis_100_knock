@@ -45,7 +45,7 @@ ex). 主軸になる Data : 最も粒度が細かい Data
 ```python
 import pandas as pd
 
-pd.merge(main_data_frame, data_frame[['data_col', 'data_2', '･･･', ]], on='Join_key', how='joing_method')
+pd.merge(main_data_frame, data_frame[['data_col', 'data_2', '･･･', ]], on='Join_key', how='join_method')
 ```
 
 # Data 結合と正規化
