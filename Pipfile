@@ -9,6 +9,7 @@ jupytext = "*"
 pandas = "*"
 matplotlib = "*"
 openpyxl = "*"
+pillow = "*"
 
 [dev-packages]
 
