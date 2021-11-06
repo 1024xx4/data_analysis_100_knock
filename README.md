@@ -233,3 +233,8 @@ Excel | Python
 
 ### Cleansing(クレジンジグ)
 Data の加工により、分析に適した Data のかたちにすること。
+
+### Data を Dump する理由
+Data 分析の際に Cleansing している Program からそのまま Data を利用すると何かしらの理由で Program を中断した際に全てをやり直す必要がでてしまう。
+その為、Cleansing した Data は Dump(出力)して、分析の際は、Dump した File から読み込み分析を行うと良い。  
+※ 元の Data に変更があった場合は、再度 Data 加工処理を行い直す必要はある。
