@@ -10,6 +10,7 @@ pandas = "*"
 matplotlib = "*"
 openpyxl = "*"
 pillow = "*"
+scikit-learn = "*"
 
 [dev-packages]
 
