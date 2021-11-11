@@ -45,7 +45,7 @@ ex). 主軸になる Data : 最も粒度が細かい Data
 ```python
 import pandas as pd
 
-pd.merge(main_data_frame, data_frame[['data_col', 'data_2', '･･･', ]], on='Join_key', how='join_method')
+pd.merge(main_data_frame, data_frame[['data_col', 'data_2' ]], on='Join_key', how='join_method')
 ```
 
 # Data 結合と正規化
@@ -173,7 +173,7 @@ groupby
 ```python
 import pandas as pd
 
-pd.pivot_table(data_frame, index='column', columns='column', values=['column_1', 'column_2'], aggfunc='集計方法')
+pd.pivot_table(data_frame, index='column', columns='column', values=['column_1', 'column_2'], aggfunc='aggregation methods')
 
 ```
 pivot_table
@@ -259,6 +259,9 @@ Data 数が急激に増加している昨今、Computer の力を借りながら
 - 将来予測に関する技術
 
 これらを現場で適切に活用していくことができれば、現場で「結果を出す」ことができる。
+
+機械学習は、Data をもとに Computer が推論を行う。そのため、どのような Data で学習させるか、という部分がとても重要になる。  
+人間もできる限り Data を理解し、特徴となりそうな変数を掴んでおくのが重要になる。
 
 ## Data 分析の醍醐味
 - 現在の Data から未来の予測が可能になること。
