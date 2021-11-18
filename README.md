@@ -311,6 +311,27 @@ Data 数が急激に増加している昨今、機械(Computer)の力を借り�
 - **ある出来事の原因を半自動的に特定**  
   => Business を現場の勘や経験に頼ることのない Data を用いた Elegant で最適な意思決定に繋がる。
 
+## Categorical 変数
+Campaign 区分、会員区分、性別、などの文字列の Category 関連の Data のこと。  
+機械学習ををやる上で重要な変数となってくる。活用するためには、 Flag 化する。
+
+### Dummy 変数化
+Categorical 変数を機械学習で活用できるように Flag 化すること。  
+**利用できる Method**  
+```python
+import pandas as pd
+
+pd.get_dummies(data_frame)
+
+# 一括で Dummy変数化が可能。
+# Cleaning が必要。
+# 例). 男性と女性を表現しようと思った時に片方が 1 であれば 0 が残った性別、
+# となるのでもう片方の変数は必要ない。
+```
+
+
+
+
 ## 機械学習の大分類
 
 - 教師あり学習
