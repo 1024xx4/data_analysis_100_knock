@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "06b9ef9833633dca0ffe8b1b63cce38bb33502fe0e234f731e1f666bd72783bf"
+            "sha256": "1229abab4b81a43193353f340756f6149ca6ed4b0b58aa76f7b4024b622daf2f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -180,11 +180,11 @@
         },
         "fonttools": {
             "hashes": [
-                "sha256:68071406009e7ef6a5fdcd85d95975cd6963867bb226f2b786bfffe15d1959ef",
-                "sha256:8c8f84131bf04f3b1dcf99b9763cec35c347164ab6ad006e18d2f99fcab05529"
+                "sha256:dca694331af74c8ad47acc5171e57f6b78fac5692bf050f2ab572964577ac0dd",
+                "sha256:eff1da7ea274c54cb8842853005a139f711646cbf6f1bcfb6c9b86a627f35ff0"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==4.28.1"
+            "version": "==4.28.2"
         },
         "ipykernel": {
             "hashes": [
@@ -259,11 +259,11 @@
         },
         "jupyter-client": {
             "hashes": [
-                "sha256:074bdeb1ffaef4a3095468ee16313938cfdc48fc65ca95cc18980b956c2e5d79",
-                "sha256:8b6e06000eb9399775e0a55c52df6c1be4766666209c22f90c2691ded0e338dc"
+                "sha256:64d93752d8cbfba0c1030c3335c3f0d9797cd1efac012652a14aac1653db11a3",
+                "sha256:a5f995a73cffb314ed262713ae6dfce53c6b8216cea9f332071b8ff44a6e1654"
             ],
             "markers": "python_full_version >= '3.6.1'",
-            "version": "==7.0.6"
+            "version": "==7.1.0"
         },
         "jupyter-console": {
             "hashes": [
@@ -501,6 +501,14 @@
             ],
             "version": "==0.8.4"
         },
+        "more-itertools": {
+            "hashes": [
+                "sha256:0a2fd25d343c08d7e7212071820e7e7ea2f41d8fb45d6bc8a00cd6ce3b7aab88",
+                "sha256:88afff98d83d08fe5e4049b81e2b54c06ebb6b3871a600040865c7a592061cbb"
+            ],
+            "markers": "python_version >= '3.5'",
+            "version": "==8.11.0"
+        },
         "nbclient": {
             "hashes": [
                 "sha256:8a307be4129cce5f70eb83a57c3edbe45656623c31de54e38bb6fdfbadc428b3",
@@ -592,6 +600,13 @@
             ],
             "index": "pypi",
             "version": "==3.0.9"
+        },
+        "ortoolpy": {
+            "hashes": [
+                "sha256:8e27d21f95c885968f4926236717f2b6b0bd55240552be7b25794a3c37a32d96"
+            ],
+            "index": "pypi",
+            "version": "==0.2.38"
         },
         "packaging": {
             "hashes": [
@@ -732,6 +747,14 @@
             ],
             "markers": "os_name != 'nt'",
             "version": "==0.7.0"
+        },
+        "pulp": {
+            "hashes": [
+                "sha256:27c2a87a98ea0e9a08c7c46e6df47d6d4e753ad9991fea2901892425d89c99a6",
+                "sha256:7da33c71388de692bd47f54299f64e06dbff005fb7330abc27ce08c05b871097"
+            ],
+            "index": "pypi",
+            "version": "==2.5.1"
         },
         "pycparser": {
             "hashes": [
