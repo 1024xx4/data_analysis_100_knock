@@ -11,6 +11,7 @@ matplotlib = "*"
 openpyxl = "*"
 pillow = "*"
 scikit-learn = "*"
+networkx = "*"
 
 [dev-packages]
 
