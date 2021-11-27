@@ -12,6 +12,8 @@ openpyxl = "*"
 pillow = "*"
 scikit-learn = "*"
 networkx = "*"
+pulp = "*"
+ortoolpy = "*"
 
 [dev-packages]
 
