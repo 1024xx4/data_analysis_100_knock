@@ -135,3 +135,6 @@ dmypy.json
 
 # Download
 use_wget/
+
+# Sample codes
+/sample_code
