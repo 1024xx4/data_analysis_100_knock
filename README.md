@@ -608,3 +608,9 @@ Network を可視化する際に Label などを表示したり、と効果的�
 ### HOG
 Histogram of Oriented Gradients の略称。  
 **輝度勾配**とも訳される。
+
+### Timelapse
+数 frame から１frame のみを取り出した「早送り動画」
+- 目で簡単に傾向を掴める。
+- Demo 映像として利用すれば分析結果に説得力をつけれる
+- 
