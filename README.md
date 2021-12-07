@@ -613,4 +613,3 @@ Histogram of Oriented Gradients の略称。
 数 frame から１frame のみを取り出した「早送り動画」
 - 目で簡単に傾向を掴める。
 - Demo 映像として利用すれば分析結果に説得力をつけれる
-- 
