@@ -16,6 +16,7 @@ pulp = "*"
 ortoolpy = "*"
 opencv-python = "*"
 cmake = "*"
+mecab-python3 = "*"
 
 [dev-packages]
 
